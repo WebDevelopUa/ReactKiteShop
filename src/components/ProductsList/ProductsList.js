@@ -2,6 +2,8 @@
 // #1 import React
 import React from 'react';
 import './ProductsList.css'
+
+// https://reactstrap.github.io/components/media/
 import {Media} from 'reactstrap';
 
 // #2 create component
