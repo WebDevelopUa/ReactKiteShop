@@ -341,7 +341,8 @@ class ProductsList extends React.Component {
     // embed a javascript expression inside your JSX
     render() {
 
-        const products = this.state.kites.map((kite) => {
+        // pass a function to map. The map() method creates a new array with the results of calling a provided function on every element in the calling array.
+        const products = this.state.kites.map(function (kite) {
 
             return (
                 <div key={kite.id} className="col-12 mt-5">
@@ -371,6 +372,7 @@ class ProductsList extends React.Component {
                 <h1>List of Products:</h1>
 
                 <Media list>
+                    {/* const output */}
                     {products}
                 </Media>
 
