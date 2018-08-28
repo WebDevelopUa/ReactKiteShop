@@ -1,4 +1,4 @@
-#Install process
+# Install process
 
     node -v
     npm -v
@@ -7,18 +7,18 @@
     npm install -g create-react-app  (if App is not created)
     create-react-app app (if App is not created)
     
-####Start the development server (cd app)
+#### Start the development server (cd app)
 
     npm start
     Local: http://localhost:3000
     
-####Install an NPM Modules (Bootstrap 4, Reactstrap, React-popper) 
+#### Install an NPM Modules (Bootstrap 4, Reactstrap, React-popper) 
 
     npm install bootstrap
     npm install reactstrap
     npm install react-popper
     
-####Configure Bootstrap, Reactstrap (cd app/src/)
+#### Configure Bootstrap, Reactstrap (cd app/src/)
 
     index.js:
     import 'bootstrap/dist/css/bootstrap.min.css';
@@ -34,7 +34,7 @@ Components: https://reactstrap.github.io/components/navbar/
         </div>
     </Navbar>
     
-####Create component (cd app/src/components/*.js)
+#### Create component (cd app/src/components/*.js)
 *component based design*
  
 1. import React
