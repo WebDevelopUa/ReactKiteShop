@@ -1,0 +1,55 @@
+#Install process
+
+    node -v
+    npm -v
+    npm init (if package.json is absent)
+    npm install lite-server --save-dev
+    npm install -g create-react-app  (if App is not created)
+    create-react-app app (if App is not created)
+    
+####Start the development server (cd app)
+
+    npm start
+    Local: http://localhost:3000
+    
+####Install an NPM Modules (Bootstrap 4, Reactstrap, React-popper) 
+
+    npm install bootstrap
+    npm install reactstrap
+    npm install react-popper
+    
+####Configure Bootstrap, Reactstrap (cd app/src/)
+
+    index.js:
+    import 'bootstrap/dist/css/bootstrap.min.css';
+    
+    App.js:
+    import {Navbar, NavbarBrand} from 'reactstrap';
+    
+Components: https://reactstrap.github.io/components/navbar/
+
+    <Navbar dark color="primary">
+        <div className="container">
+             <NavbarBrand href="/">BRAND</NavbarBrand>
+        </div>
+    </Navbar>
+    
+####Create component (cd app/src/components/*.js)
+*component based design*
+ 
+1. import React
+    
+        import React from 'react';
+2. create component
+       
+       class ProductsList extends React.Component {
+        }
+3. export component
+       
+       export default ProductsList;
+4. use  <ProductsList/> in App.js after:
+       
+       import ProductsList from "./components/ProductsList";
+
+ 
+    
