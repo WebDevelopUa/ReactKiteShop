@@ -4,5 +4,6 @@
 
 .Navigation-bar span {
     font-size: 20px;
+    text-transform: capitalize;
     color: yellow;
 }

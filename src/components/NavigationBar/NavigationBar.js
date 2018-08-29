@@ -12,7 +12,7 @@ class NavigationBar extends React.Component {
             <Navbar className='Navigation-bar' dark color="primary">
                 <div className="container">
                     <NavbarBrand href="/">
-                        <span> Kite Shop</span>
+                        <span> Kite shop</span>
                     </NavbarBrand>
                 </div>
             </Navbar>

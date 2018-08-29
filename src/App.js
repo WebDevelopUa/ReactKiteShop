@@ -19,21 +19,10 @@ class App extends Component {
     render() {
         return (
 
-            <div>
-
+            <div className="App">
                 <NavigationBar/>
 
-                <div className="container">
-
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ProductsList products={this.state.products}/>
-                        </div>
-                    </div>
-
-                </div>
-
-
+                <ProductsList products={this.state.products}/>
             </div>
         );
     }

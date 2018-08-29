@@ -1,6 +1,7 @@
 .Products-list h1 {
     font-size: 25px;
     margin: 20px auto;
+    text-transform: capitalize;
 }
 
 .Products-list ul {
