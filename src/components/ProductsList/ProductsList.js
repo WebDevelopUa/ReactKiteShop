@@ -13,12 +13,35 @@ class ProductsList extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {};
-
+        this.state = {
+            selectedProduct: null
+        }
 
     }
 
+    onProductSelect(kite) {
+        this.setState({selectedProduct: kite})
+    }
 
+    renderProduct(kite) {
+        if (kite != null)
+            return (
+                <Card>
+                    <CardImg top width="100%" src={kite.image} alt={kite.name}/>
+                    <CardBody>
+                        <CardTitle>{kite.name}</CardTitle>
+                        <CardText> {kite.description}</CardText>
+                    </CardBody>
+                </Card>
+            );
+        else {
+            return (
+                <div/>
+            )
+        }
+    }
+
+ 
     // embed a javascript expression inside your JSX
     render() {
 
@@ -27,14 +50,14 @@ class ProductsList extends React.Component {
 
             return (
                 <div key={kite.id} className="col-12 col-md-5 m-1">
-                    <Card>
+                    <Card onClick={() => this.onProductSelect(kite)}>
                         <CardImg top width="100%" src={kite.image} alt={kite.name}/>
                         <CardBody>
                             <CardImgOverlay>
                                 <CardTitle>{kite.name}</CardTitle>
                                 <CardSubtitle>{kite.price}</CardSubtitle>
                                 <br/>
-                                <Button >Details</Button>
+                                <Button>Details</Button>
                             </CardImgOverlay>
                         </CardBody>
                     </Card>
@@ -50,18 +73,25 @@ class ProductsList extends React.Component {
                         <h1>Product list</h1>
                     </div>
                     <div className="row">
-
                         {products}
                     </div>
+
+                    <div className="row">
+                        {this.renderProduct(this.state.selectedProduct)}
+                    </div>
+
+
                 </div>
             </div>
         );
 
     };
+
+
 }
 
 // #3 export component
 export default ProductsList;
 
-// #4 use  <ProductsList/> in App.js after:
+// #4 use <ProductsList/> in App.js after:
 // import ProductsList from "./components/ProductsList";
