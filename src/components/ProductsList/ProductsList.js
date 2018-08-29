@@ -26,13 +26,15 @@ class ProductsList extends React.Component {
     renderProduct(kite) {
         if (kite != null)
             return (
-                <Card>
-                    <CardImg top width="100%" src={kite.image} alt={kite.name}/>
-                    <CardBody>
-                        <CardTitle>{kite.name}</CardTitle>
-                        <CardText> {kite.description}</CardText>
-                    </CardBody>
-                </Card>
+                <div className="col-12 col-md-8 mx-auto">
+                    <Card>
+                        <CardImg top width="100%" src={kite.image} alt={kite.name}/>
+                        <CardBody>
+                            <CardTitle>{kite.name}</CardTitle>
+                            <CardText className="Product-description"> {kite.description}</CardText>
+                        </CardBody>
+                    </Card>
+                </div>
             );
         else {
             return (
@@ -41,7 +43,7 @@ class ProductsList extends React.Component {
         }
     }
 
- 
+
     // embed a javascript expression inside your JSX
     render() {
 
@@ -70,14 +72,17 @@ class ProductsList extends React.Component {
             <div className="Products-list">
                 <div className="container">
                     <div className="row">
+                        <h1>Product Detail</h1>
+                    </div>
+                    <div className="row">
+                        {this.renderProduct(this.state.selectedProduct)}
+                    </div>
+
+                    <div className="row">
                         <h1>Product list</h1>
                     </div>
                     <div className="row">
                         {products}
-                    </div>
-
-                    <div className="row">
-                        {this.renderProduct(this.state.selectedProduct)}
                     </div>
 
 
