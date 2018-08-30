@@ -1,7 +1,19 @@
-.Products-list h1 {
-    font-size: 25px;
-    margin: 20px auto;
+.Products-list  {
     text-transform: capitalize;
+    text-align: center;
+}
+.Products-list .card-title {
+    font-size: 18px;
+    margin: 20px auto;
+    color: navy;
+    background-color: rgba(176, 196, 222, 0.8);
+}
+
+.Products-list .card-subtitle {
+    font-size: 14px;
+    margin: 20px auto;
+    color: yellow;
+    background-color: darkslategrey;
 }
 
 .Products-list ul {

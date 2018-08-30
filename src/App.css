@@ -1,5 +1,6 @@
 .App-structure {
     text-align: center;
+    text-transform: capitalize;
     background-color: darkblue;
     color: lightcyan;
     padding: 20px;

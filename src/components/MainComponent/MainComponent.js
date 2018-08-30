@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import NavigationBar from "../NavigationBar/NavigationBar";
 import ProductsList from "../ProductsList/ProductsList";
 import {KITES} from "../../shared/ProductDetailsInfo";
+import ProductDetail from "../ProductDetail/ProductDetail";
 
 class Main extends Component {
 
@@ -9,10 +10,14 @@ class Main extends Component {
         super(props);
 
         this.state = {
-            products: KITES
+            products: KITES,
+            selectedProduct: null
         };
     }
 
+    onProductSelect(kiteId) {
+        this.setState({selectedProduct: kiteId})
+    }
 
     render() {
         return (
@@ -21,7 +26,10 @@ class Main extends Component {
 
                 <NavigationBar/>
 
-                <ProductsList products={this.state.products}/>
+                <ProductsList products={this.state.products} onClick={(kiteId) => this.onProductSelect(kiteId)} />
+
+                <ProductDetail kite={this.state.products.filter((kite) => kite.id === this.state.selectedProduct)[0]} />
+
             </div>
         )
     }
