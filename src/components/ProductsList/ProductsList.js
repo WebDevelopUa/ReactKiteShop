@@ -3,8 +3,6 @@
 import React from 'react';
 import './ProductsList.css'
 
-// https://reactstrap.github.io/components/media/
-// import {Media} from 'reactstrap';
 // https://reactstrap.github.io/components/card/
 import {Card, CardImg, CardText, CardImgOverlay, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
 
@@ -69,19 +67,17 @@ class ProductsList extends React.Component {
         });
 
         return (
+
             <div className="Products-list">
                 <div className="container">
+
                     <div className="row">
-                        <h1>Product Detail</h1>
-                    </div>
-                    <div className="row">
+                        <span className="App-structure">Product Detail</span>
                         {this.renderProduct(this.state.selectedProduct)}
                     </div>
 
                     <div className="row">
-                        <h1>Product list</h1>
-                    </div>
-                    <div className="row">
+                        <span className="App-structure">Product List</span>
                         {products}
                     </div>
 
