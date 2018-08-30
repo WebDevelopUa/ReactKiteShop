@@ -1,28 +1,13 @@
 import React, {Component} from 'react';
-
-
 import './App.css';
-import ProductsList from "./components/ProductsList/ProductsList";
-import NavigationBar from "./components/NavigationBar/NavigationBar";
-import {KITES} from "./shared/ProductDetails";
+import Main from "./components/MainComponent/MainComponent";
 
 class App extends Component {
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            products: KITES
-        };
-    }
-
     render() {
         return (
-
             <div className="App">
-                <NavigationBar/>
-
-                <ProductsList products={this.state.products}/>
+                <Main/>
             </div>
         );
     }
