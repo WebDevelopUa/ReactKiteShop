@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import NavigationBar from "../NavigationBar/NavigationBar";
 import ProductsList from "../ProductsList/ProductsList";
-import {KITES} from "../../shared/ProductDetails";
+import {KITES} from "../../shared/ProductDetailsInfo";
 
 class Main extends Component {
 

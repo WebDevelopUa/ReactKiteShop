@@ -8,6 +8,7 @@ import {Card, CardImg, CardText, CardImgOverlay, CardBody, CardTitle, CardSubtit
 
 // #2 create component (move all state content to separate file in shared folder)
 class ProductsList extends React.Component {
+
     constructor(props) {
         super(props);
 
@@ -36,7 +37,37 @@ class ProductsList extends React.Component {
             );
         else {
             return (
-                <div/>
+                <div className="mx-auto text-center"><span>Product Detail</span></div>
+            )
+        }
+    }
+
+    renderComments(comments) {
+        if (comments != null)
+            return (
+                <div className="col-12 col-md-4 mx-auto">
+                    <h4>Comments</h4>
+                    <ul className="list-unstyled">
+                        {comments.map((comment) => {
+                            return (
+                                <li key={comment.id}>
+                                    <p>{comment.comment}</p>
+                                    <p>&#8505; &nbsp; {comment.author}, {new Intl.DateTimeFormat('en-US', {
+                                        year: 'numeric',
+                                        month: 'short',
+                                        day: '2-digit'
+                                    }).format(new Date(Date.parse(comment.date)))}</p>
+                                </li>
+                            );
+                        })}
+
+                    </ul>
+
+                </div>
+            );
+        else {
+            return (
+                <div className="mx-auto text-center"><span>Product Comments</span></div>
             )
         }
     }
@@ -74,6 +105,7 @@ class ProductsList extends React.Component {
                     <div className="row">
                         <span className="App-structure">Product Detail</span>
                         {this.renderProduct(this.state.selectedProduct)}
+                        {this.renderComments(this.state.comments)}
                     </div>
 
                     <div className="row">
