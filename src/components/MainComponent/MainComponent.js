@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment}  from 'react';
 import Header from "../Header/HeaderComponent";
 import ProductsList from "../ProductsList/ProductsList";
 import {KITES} from "../../shared/ProductDetailsInfo";
@@ -22,7 +22,7 @@ class Main extends Component {
 
     render() {
         return (
-            <div>
+            <Fragment>
                 <span className="App-structure">Main Component</span>
 
                 <Header/>
@@ -33,7 +33,7 @@ class Main extends Component {
 
                 <Footer/>
 
-            </div>
+            </Fragment>
         )
     }
 }
