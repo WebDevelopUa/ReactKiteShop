@@ -2,8 +2,7 @@
 // https://reactstrap.github.io/components/jumbotron/
 
 import './HeaderComponent.css'
-import {Component, Fragment} from "react";
-import React from "react";
+import React, {Component, Fragment} from "react";
 import {Navbar, NavbarBrand, Jumbotron} from 'reactstrap';
 
 

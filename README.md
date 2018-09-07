@@ -12,16 +12,20 @@
     npm start
     Local: http://localhost:3000
     
-#### Install an NPM Modules (Bootstrap 4, Reactstrap, React-popper) 
+#### Install an NPM Modules (Bootstrap 4, Reactstrap, React-popper, Font Awesome, Bootstrap Social) 
 
     npm install bootstrap
     npm install reactstrap
     npm install react-popper
+    npm install font-awesome@4.7.0
+    npm install bootstrap-social@5.1.1
     
-#### Configure Bootstrap, Reactstrap (cd app/src/)
+#### Configure Bootstrap, Reactstrap, Font Awesome, Bootstrap Social (cd app/src/)
 
     index.js:
     import 'bootstrap/dist/css/bootstrap.min.css';
+    import 'bootstrap/dist/css/bootstrap.min.css';
+    import 'font-awesome/css/font-awesome.min.css'
     
     App.js:
     import {Navbar, NavbarBrand} from 'reactstrap';

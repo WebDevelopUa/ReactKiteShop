@@ -1,0 +1,15 @@
+.footer {
+    color: ghostwhite;
+    background-color: #000011;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+}
+
+.footer a {
+    color: ghostwhite;
+}
+
+address {
+    font-size: 80%;
+    margin: 0;
+}

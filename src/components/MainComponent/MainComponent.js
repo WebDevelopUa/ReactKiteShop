@@ -3,6 +3,7 @@ import Header from "../Header/HeaderComponent";
 import ProductsList from "../ProductsList/ProductsList";
 import {KITES} from "../../shared/ProductDetailsInfo";
 import ProductDetail from "../ProductDetail/ProductDetail";
+import Footer from '../Footer/FooterComponent';
 
 class Main extends Component {
 
@@ -29,6 +30,8 @@ class Main extends Component {
                 <ProductsList products={this.state.products} onClick={(kiteId) => this.onProductSelect(kiteId)}/>
 
                 <ProductDetail kite={this.state.products.filter((kite) => kite.id === this.state.selectedProduct)[0]}/>
+
+                <Footer/>
 
             </div>
         )
