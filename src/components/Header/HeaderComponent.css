@@ -1,0 +1,9 @@
+.Navigation-bar {
+    background-color: steelblue;
+}
+
+.Navigation-bar a {
+    color: yellow;
+    font-weight: bold;
+    text-transform: uppercase;
+}
