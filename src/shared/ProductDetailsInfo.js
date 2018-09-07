@@ -45,7 +45,7 @@ export const KITES =
                     id: 0,
                     rating: 5,
                     comment: 'Great choice',
-                    author: 'Tom Lee',
+                    author: 'Tom Jones',
                     date: '2018-03-16T17:57:28.556094Z'
 
                 },
@@ -111,24 +111,24 @@ export const KITES =
                 {
                     id: 0,
                     rating: 5,
-                    comment: 'Great choice',
-                    author: 'Tom Lee',
+                    comment: 'Perfect',
+                    author: 'Bruce Lee',
                     date: '2018-03-16T17:57:28.556094Z'
 
                 },
                 {
                     id: 1,
                     rating: 5,
-                    comment: 'Best buy!',
-                    author: 'Tom Lee',
+                    comment: 'Amazing buy!',
+                    author: 'Tom Hardy',
                     date: '2018-04-16T17:57:28.556094Z'
 
                 },
                 {
                     id: 2,
                     rating: 5,
-                    comment: 'I`m Happy!',
-                    author: 'Tom Lee',
+                    comment: 'What?',
+                    author: 'Boe Joe',
                     date: '2018-05-16T17:57:28.556094Z'
 
                 },
@@ -174,24 +174,24 @@ export const KITES =
                 {
                     id: 0,
                     rating: 5,
-                    comment: 'Great choice',
-                    author: 'Tom Lee',
+                    comment: 'Useful',
+                    author: 'Josh',
                     date: '2018-03-16T17:57:28.556094Z'
 
                 },
                 {
                     id: 1,
                     rating: 5,
-                    comment: 'Best buy!',
-                    author: 'Tom Lee',
+                    comment: 'Practical',
+                    author: 'Anonymous',
                     date: '2018-04-16T17:57:28.556094Z'
 
                 },
                 {
                     id: 2,
                     rating: 5,
-                    comment: 'I`m Happy!',
-                    author: 'Tom Lee',
+                    comment: 'yes',
+                    author: 'Unknown',
                     date: '2018-05-16T17:57:28.556094Z'
 
                 },
