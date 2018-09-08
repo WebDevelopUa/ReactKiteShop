@@ -3,7 +3,7 @@ import Header from "../Header/HeaderComponent";
 import ProductsList from "../ProductsList/ProductsList";
 import {KITES} from "../../shared/ProductDetailsInfo";
 import ProductDetail from "../ProductDetail/ProductDetail";
-import Footer from '../Footer/FooterComponent';
+import RenderFooter from "../Footer/FooterComponent";
 
 class Main extends Component {
 
@@ -31,7 +31,7 @@ class Main extends Component {
 
                 <ProductDetail kite={this.state.products.filter((kite) => kite.id === this.state.selectedProduct)[0]}/>
 
-                <Footer/>
+                <RenderFooter/>
 
             </Fragment>
         )
