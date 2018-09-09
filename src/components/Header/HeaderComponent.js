@@ -6,9 +6,21 @@ import React, {Component, Fragment} from "react";
 import {Navbar, NavbarBrand, Jumbotron} from 'reactstrap';
 import {NavLink} from "react-router-dom";
 import {Nav, Collapse, NavItem} from 'reactstrap';
+import {NavbarToggler} from 'reactstrap';
 
 
 class Header extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {isNavOpen: false};
+        this.toggleNav = this.toggleNav.bind(this);
+    }
+
+    toggleNav() {
+        this.setState({isNavOpen: !this.state.isNavOpen});
+    }
+
     render() {
 
         return (
@@ -18,13 +30,15 @@ class Header extends Component {
                 <Navbar className='Navigation-bar' expand="md">
                     <div className="container">
 
+                        <NavbarToggler onClick={this.toggleNav}/>
+
                         <NavbarBrand href="/home">
                             <span> <img src="img/kite-logo-yellow.png" alt="Kite shop" height="30" width="41"/></span>
                             <span>&emsp;</span>
                             <span>Kite shop</span>
                         </NavbarBrand>
 
-                        <Collapse navbar>
+                        <Collapse navbar isOpen={this.state.isNavOpen}>
                             <Nav navbar>
 
                                 <NavItem>

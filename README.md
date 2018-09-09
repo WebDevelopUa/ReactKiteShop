@@ -69,6 +69,23 @@ Components: https://reactstrap.github.io/components/navbar/
     <Navbar className='Navigation-bar' expand="md"> <Collapse navbar> <Nav navbar> <NavItem> <NavLink className="nav-link" to="/home"> <span className="fa fa-home fa-lg"> Home</span> </NavLink> </NavItem> </Nav> </Collapse>  </Navbar>
       
   
+    
+      
+#### Configure NavbarToggler (reactstrap) (cd app/src/)
+
+    HeaderComponent.js:
+    import {NavbarToggler} from 'reactstrap';
+        
+    <NavLink className="nav-link" to="/home"></NavLink>
+      
+    import {Nav, Collapse, NavItem} from 'reactstrap';
+      
+    constructor(props) {super(props);this.state = {isNavOpen: false};
+    this.toggleNav = this.toggleNav.bind(this);}
+    toggleNav() {this.setState({isNavOpen: !this.state.isNavOpen});}
+    <Navbar expand="md">   <NavbarToggler onClick={this.toggleNav}/>   <Collapse navbar isOpen={this.state.isNavOpen}> </Collapse> </Navbar>
+             
+  
   
   
   
