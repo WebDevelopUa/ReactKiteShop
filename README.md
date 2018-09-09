@@ -48,6 +48,26 @@ Components: https://reactstrap.github.io/components/navbar/
     import {Switch, Route, Redirect} from 'react-router-dom';
     
     
+#### Configure Links (React Router DOM) (cd app/src/)
+
+    FooterComponent.js:
+    import {Link} from "react-router-dom";
+        
+    <Link to="/home">Home</Link>
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ---  
     
 #### Create component (cd app/src/components/*.js)
 *component based design*
