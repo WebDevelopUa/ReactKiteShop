@@ -12,15 +12,16 @@
     npm start
     Local: http://localhost:3000
     
-#### Install an NPM Modules (Bootstrap 4, Reactstrap, React-popper, Font Awesome, Bootstrap Social) 
+#### Install an NPM Modules (Bootstrap 4, Reactstrap, React-popper, Font Awesome, Bootstrap Social, React Router DOM 
 
     npm install bootstrap
     npm install reactstrap
     npm install react-popper
     npm install font-awesome@4.7.0
     npm install bootstrap-social@5.1.1
+    npm install react-router-dom
     
-#### Configure Bootstrap, Reactstrap, Font Awesome, Bootstrap Social (cd app/src/)
+#### Configure Bootstrap, Reactstrap, Font Awesome, Bootstrap Social, React Router DOM (cd app/src/)
 
     index.js:
     import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,6 +30,7 @@
     
     App.js:
     import {Navbar, NavbarBrand} from 'reactstrap';
+    import {BrowserRouter} from 'react-router-dom';
     
 Components: https://reactstrap.github.io/components/navbar/
 
@@ -37,6 +39,15 @@ Components: https://reactstrap.github.io/components/navbar/
              <NavbarBrand href="/">BRAND</NavbarBrand>
         </div>
     </Navbar>
+    
+    <BrowserRouter>
+        <div className="App"><Main/></div>
+    </BrowserRouter>    
+    
+    MainComponent.js:
+    import {Switch, Route, Redirect} from 'react-router-dom';
+    
+    
     
 #### Create component (cd app/src/components/*.js)
 *component based design*

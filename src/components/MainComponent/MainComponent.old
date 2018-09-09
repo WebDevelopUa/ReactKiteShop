@@ -1,11 +1,9 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component, Fragment}  from 'react';
 import Header from "../Header/HeaderComponent";
 import ProductsList from "../ProductsList/ProductsList";
 import {KITES} from "../../shared/ProductDetailsInfo";
 import ProductDetail from "../ProductDetail/ProductDetail";
 import RenderFooter from "../Footer/FooterComponent";
-import {Switch, Route, Redirect} from 'react-router-dom';
-import Home from "../Home/HomeComponent";
 
 class Main extends Component {
 
@@ -14,29 +12,24 @@ class Main extends Component {
 
         this.state = {
             products: KITES,
+            selectedProduct: null
         };
     }
 
+    onProductSelect(kiteId) {
+        this.setState({selectedProduct: kiteId})
+    }
 
     render() {
-
-        // define functional components
-        const HomePage = () => {
-            return (
-                <Home/>
-            );
-        };
-
         return (
             <Fragment>
                 <span className="App-structure">Main Component</span>
 
                 <Header/>
 
-                <Switch>
-                    <Route path="/home" component={HomePage}/>
-                    <Redirect to="/home"/>
-                </Switch>
+                <ProductsList products={this.state.products} onClick={(kiteId) => this.onProductSelect(kiteId)}/>
+
+                <ProductDetail kite={this.state.products.filter((kite) => kite.id === this.state.selectedProduct)[0]}/>
 
                 <RenderFooter/>
 
