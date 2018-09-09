@@ -48,7 +48,7 @@ Components: https://reactstrap.github.io/components/navbar/
     import {Switch, Route, Redirect} from 'react-router-dom';
     
     
-#### Configure Links (React Router DOM) (cd app/src/)
+#### Configure Links (React Router DOM) (cd app/src/components/)
 
     FooterComponent.js:
     import {Link} from "react-router-dom";
@@ -57,7 +57,7 @@ Components: https://reactstrap.github.io/components/navbar/
       
   
       
-#### Configure NavLinks (React Router DOM) (cd app/src/)
+#### Configure NavLinks (React Router DOM) (cd app/src/components/)
 
     HeaderComponent.js:
     import {NavLink} from "react-router-dom";
@@ -71,7 +71,7 @@ Components: https://reactstrap.github.io/components/navbar/
   
     
       
-#### Configure NavbarToggler (reactstrap) (cd app/src/)
+#### Configure NavbarToggler (reactstrap) (cd app/src/components/)
 
     HeaderComponent.js:
     import {NavbarToggler} from 'reactstrap';
