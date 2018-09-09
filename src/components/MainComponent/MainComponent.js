@@ -27,6 +27,13 @@ class Main extends Component {
             );
         };
 
+        // const List = () =>  <ProductsList products={this.state.products}/>}
+        const List = () => {
+            return (
+                <ProductsList products={this.state.products}/>
+            );
+        };
+
         return (
             <Fragment>
                 <span className="App-structure">Main Component</span>
@@ -35,6 +42,7 @@ class Main extends Component {
 
                 <Switch>
                     <Route path="/home" component={HomePage}/>
+                    <Route path="/list" component={List}/>
                     <Redirect to="/home"/>
                 </Switch>
 
