@@ -56,8 +56,18 @@ Components: https://reactstrap.github.io/components/navbar/
     <Link to="/home">Home</Link>
       
   
-  
-  
+      
+#### Configure NavLinks (React Router DOM) (cd app/src/)
+
+    HeaderComponent.js:
+    import {NavLink} from "react-router-dom";
+        
+    <NavLink className="nav-link" to="/home"></NavLink>
+      
+    import {Nav, Collapse, NavItem} from 'reactstrap';
+      
+    <Navbar className='Navigation-bar' expand="md"> <Collapse navbar> <Nav navbar> <NavItem> <NavLink className="nav-link" to="/home"> <span className="fa fa-home fa-lg"> Home</span> </NavLink> </NavItem> </Nav> </Collapse>  </Navbar>
+      
   
   
   
