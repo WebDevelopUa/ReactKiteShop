@@ -1,12 +1,14 @@
 import React, {Component, Fragment} from 'react';
 import Header from "../Header/HeaderComponent";
 import ProductsList from "../ProductsList/ProductsList";
-import {KITES} from "../../shared/ProductDetailsInfo";
+// import {KITES} from "../../shared/ProductDetailsInfo";
 import ProductDetail from "../ProductDetail/ProductDetail";
 import RenderFooter from "../Footer/FooterComponent";
 import {Switch, Route, Redirect} from 'react-router-dom';
 import Home from "../Home/HomeComponent";
 import Contact from "../Contact/ContactComponent";
+
+import {KITES} from "../../shared/kites";
 
 class Main extends Component {
 
