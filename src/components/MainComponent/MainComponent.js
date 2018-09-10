@@ -11,6 +11,7 @@ import Contact from "../Contact/ContactComponent";
 import {KITES} from "../../shared/kites";
 import {COMMENTS} from "../../shared/comments";
 import {LEADERS} from "../../shared/leaders";
+import {PROMOTIONS} from "../../shared/promotions";
 
 class Main extends Component {
 
@@ -20,7 +21,8 @@ class Main extends Component {
         this.state = {
             products: KITES,
             comments: COMMENTS,
-            leaders: LEADERS
+            leaders: LEADERS,
+            promotions: PROMOTIONS
         };
     }
 
@@ -33,6 +35,7 @@ class Main extends Component {
                 <Home
                     product={this.state.products.filter((product) => product.featured)[0]}
                     leader={this.state.leaders.filter((leader) => leader.featured)[0]}
+                    promotion={this.state.promotions.filter((promotion) => promotion.featured)[0]}
                 />
             );
         };
