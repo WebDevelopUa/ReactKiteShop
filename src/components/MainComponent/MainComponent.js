@@ -9,6 +9,8 @@ import Home from "../Home/HomeComponent";
 import Contact from "../Contact/ContactComponent";
 
 import {KITES} from "../../shared/kites";
+import {COMMENTS} from "../../shared/comments";
+import {LEADERS} from "../../shared/leaders";
 
 class Main extends Component {
 
@@ -17,6 +19,8 @@ class Main extends Component {
 
         this.state = {
             products: KITES,
+            comments: COMMENTS,
+            leaders: LEADERS
         };
     }
 
@@ -26,7 +30,10 @@ class Main extends Component {
         // define functional components
         const HomePage = () => {
             return (
-                <Home/>
+                <Home
+                    product={this.state.products.filter((product) => product.featured)[0]}
+                    leader={this.state.leaders.filter((leader) => leader.featured)[0]}
+                />
             );
         };
 
