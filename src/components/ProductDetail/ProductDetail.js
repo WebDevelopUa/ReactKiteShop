@@ -56,7 +56,7 @@ const ProductDetail = (props) => {
                 <div className="row">
                     <span className="App-structure">Product detail</span>
                     <RenderProductDetail product={props.product}/>
-                    <RenderComments comments={props.product.comments}/>
+                    <RenderComments comments={props.comment}/>
                 </div>
             </div>
 

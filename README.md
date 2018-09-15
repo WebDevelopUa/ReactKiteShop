@@ -100,9 +100,18 @@ Components: https://reactstrap.github.io/components/navbar/
     
     const ProductWithId = ({match}) => { return (  <ProductDetail   product={this.state.products.filter((product) => product.id === parseInt(match.params.productId, 10))[0]}    />  );  };
         
-  
-  
-  
+    
+      
+#### Configure comments in Product detail (cd app/src/components/)
+
+    MainComponent.js:
+    
+    const ProductWithId = ({match}) => {     return (    <ProductDetail        product={this.state.products.filter((product) => product.id === parseInt(match.params.productId, 10))[0]}   comment={this.state.comments.filter((comment) => comment.productId === parseInt(match.params.productId, 10))}/>    ); };
+    
+    ProductDetail.js:
+    
+    <RenderComments comments={props.comment}/>
+      
   
   
   

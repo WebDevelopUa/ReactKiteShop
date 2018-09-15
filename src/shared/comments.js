@@ -100,8 +100,8 @@ export const COMMENTS =
             id: 10,
             productId: 3,
             rating: 5,
-            comment: 'Best buy!',
-            author: 'Tom Lee',
+            comment: 'Best choice',
+            author: 'Toby',
             date: '2018-04-16T17:57:28.556094Z'
 
         },
@@ -109,8 +109,8 @@ export const COMMENTS =
             id: 11,
             productId: 3,
             rating: 5,
-            comment: 'I`m Happy!',
-            author: 'Tom Lee',
+            comment: 'We are Happy!',
+            author: 'Man',
             date: '2018-05-16T17:57:28.556094Z'
 
         },
@@ -119,27 +119,27 @@ export const COMMENTS =
             id: 12,
             productId: 4,
             rating: 5,
-            comment: 'Great choice',
-            author: 'Tom Lee',
-            date: '2018-03-16T17:57:28.556094Z'
+            comment: 'Funny',
+            author: 'Lol',
+            date: '2018-01-16T17:57:28.556094Z'
 
         },
         {
             id: 13,
             productId: 4,
             rating: 5,
-            comment: 'Best buy!',
-            author: 'Tom Lee',
-            date: '2018-04-16T17:57:28.556094Z'
+            comment: 'YEah',
+            author: 'Tim ',
+            date: '2018-01-16T17:57:28.556094Z'
 
         },
         {
             id: 14,
             productId: 4,
             rating: 5,
-            comment: 'I`m Happy!',
-            author: 'Tom Lee',
-            date: '2018-05-16T17:57:28.556094Z'
+            comment: 'Yes!',
+            author: 'Tommy ',
+            date: '2018-01-16T17:57:28.556094Z'
 
         }
 
