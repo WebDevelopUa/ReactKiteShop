@@ -59,6 +59,7 @@ const ProductDetail = (props) => {
                 <div className="row">
                     <div className="col-12">
                         <Breadcrumb>
+                            <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
                             <BreadcrumbItem><Link to="/list">Product List</Link></BreadcrumbItem>
                             <BreadcrumbItem active> {props.product.name} </BreadcrumbItem>
                         </Breadcrumb>

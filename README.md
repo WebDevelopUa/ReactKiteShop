@@ -126,6 +126,8 @@ Components: https://reactstrap.github.io/components/navbar/
     import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
     import { Link } from 'react-router-dom';
     
+    <Breadcrumb> <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem> <BreadcrumbItem><Link to="/list">Product List</Link></BreadcrumbItem> <BreadcrumbItem active> {props.product.name} </BreadcrumbItem> </Breadcrumb>
+    
     
       
   
