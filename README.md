@@ -112,6 +112,36 @@ Components: https://reactstrap.github.io/components/navbar/
     
     <RenderComments comments={props.comment}/>
       
+      
+      
+#### Adding Breadcrumbs (cd app/src/components/)
+
+    HomeComponent.js, AboutComponent.js, ContactComponent.js, ProductsList:
+    import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+    import { Link } from 'react-router-dom';
+    
+    <Breadcrumb> <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem> <BreadcrumbItem active>Contact Us</BreadcrumbItem> </Breadcrumb>
+        
+    ProductDetail.js:
+    import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+    import { Link } from 'react-router-dom';
+    
+    
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   

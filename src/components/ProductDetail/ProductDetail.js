@@ -1,6 +1,8 @@
 import React from 'react';
 import './ProductDetail.css';
 import {Card, CardImg, CardText, CardImgOverlay, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
+import {Breadcrumb, BreadcrumbItem} from 'reactstrap';
+import {Link} from 'react-router-dom';
 
 // create Functional component for the ProductDetail render
 function RenderProductDetail({product}) {
@@ -53,11 +55,29 @@ const ProductDetail = (props) => {
     if (props.product != null)
         return (
             <div className="container">
+
+                <div className="row">
+                    <div className="col-12">
+                        <Breadcrumb>
+                            <BreadcrumbItem><Link to="/list">Product List</Link></BreadcrumbItem>
+                            <BreadcrumbItem active> {props.product.name} </BreadcrumbItem>
+                        </Breadcrumb>
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-12">
+                        <h3> {props.product.name} </h3>
+                        <hr/>
+                    </div>
+                </div>
+
                 <div className="row">
                     <span className="App-structure">Product detail</span>
                     <RenderProductDetail product={props.product}/>
                     <RenderComments comments={props.comment}/>
                 </div>
+
             </div>
 
         );

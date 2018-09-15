@@ -4,6 +4,8 @@ import React from 'react';
 import './ProductsList.css'
 
 import {Card, CardImg, CardText, CardImgOverlay, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
+
+import {Breadcrumb, BreadcrumbItem} from 'reactstrap';
 import {Link} from 'react-router-dom';
 
 //  create Functional component RenderProductsListItem
@@ -38,10 +40,24 @@ const ProductsList = (props) => {
     });
 
     return (
-        <div className="Products-list">
-            <div className="container">
+
+        <div className="container">
+
+            <div className="row">
+                <div className="col-12">
+                    <Breadcrumb>
+                        <BreadcrumbItem>
+                            <Link to="/home">Home</Link>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem active>Product List</BreadcrumbItem>
+                    </Breadcrumb>
+                </div>
+            </div>
+
+            <div className="Products-list">
                 <div className="row">
                     <span className="App-structure">Product List</span>
+
                     {products}
                 </div>
             </div>

@@ -2,7 +2,7 @@ export const PRODUCTS =
     [
         {
             id: 0,
-            name: 'nobile_50fifty',
+            name: 'Nobile 50fifty',
             image: '/img/nobile_50fifty.jpg',
             category: 'kites',
             label: 'Hot',
@@ -42,7 +42,7 @@ export const PRODUCTS =
         },
         {
             id: 1,
-            name: 'nobile_t5',
+            name: 'Nobile T5',
             image: '/img/nobile_t5.jpg',
             category: 'kites',
             label: 'Hot',
@@ -83,7 +83,7 @@ export const PRODUCTS =
         },
         {
             id: 2,
-            name: 'nobile_no1',
+            name: 'Nobile №1',
             image: '/img/nobile_no1.jpg',
             category: 'kites',
             label: 'Hot',
@@ -120,7 +120,7 @@ export const PRODUCTS =
         },
         {
             id: 3,
-            name: 'nobile_mr_big',
+            name: 'Nobile mr.Big',
             image: '/img/nobile_mr_big.jpg',
             category: 'kites',
             label: 'Top',
@@ -164,7 +164,7 @@ export const PRODUCTS =
         },
         {
             id: 4,
-            name: 'rookie glowne',
+            name: 'Rookie Glowne',
             image: '/img/rookie glowne.jpg',
             category: 'kites',
             label: 'Hot',

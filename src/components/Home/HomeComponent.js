@@ -1,6 +1,8 @@
 import React from 'react';
 import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import "./HomeComponent.css";
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 function RenderCard({item}) {
 
@@ -23,7 +25,14 @@ function Home(props) {
 
     return (
         <div className="container">
-            <h1>Home</h1>
+
+            <div className="row">
+                <div className="col-12">
+                    <Breadcrumb>
+                        <BreadcrumbItem active>Home</BreadcrumbItem>
+                    </Breadcrumb>
+                </div>
+            </div>
 
             <div className="row align-items-lg-start">
 
