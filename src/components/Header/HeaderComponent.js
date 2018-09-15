@@ -33,7 +33,7 @@ class Header extends Component {
                         <NavbarToggler onClick={this.toggleNav}/>
 
                         <NavbarBrand href="/home">
-                            <span> <img src="img/kite-logo-yellow.png" alt="Kite shop" height="30" width="41"/></span>
+                            <span> <img src="/img/kite-logo-yellow.png" alt="Kite shop" height="30" width="41"/></span>
                             <span>&emsp;</span>
                             <span>Kite shop</span>
                         </NavbarBrand>

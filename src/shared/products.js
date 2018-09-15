@@ -3,7 +3,7 @@ export const PRODUCTS =
         {
             id: 0,
             name: 'nobile_50fifty',
-            image: 'img/nobile_50fifty.jpg',
+            image: '/img/nobile_50fifty.jpg',
             category: 'kites',
             label: 'Hot',
             price: '899 - 1399 €',
@@ -43,7 +43,7 @@ export const PRODUCTS =
         {
             id: 1,
             name: 'nobile_t5',
-            image: 'img/nobile_t5.jpg',
+            image: '/img/nobile_t5.jpg',
             category: 'kites',
             label: 'Hot',
             price: '899 – 1.399 €',
@@ -84,7 +84,7 @@ export const PRODUCTS =
         {
             id: 2,
             name: 'nobile_no1',
-            image: 'img/nobile_no1.jpg',
+            image: '/img/nobile_no1.jpg',
             category: 'kites',
             label: 'Hot',
             price: '599 €',
@@ -121,7 +121,7 @@ export const PRODUCTS =
         {
             id: 3,
             name: 'nobile_mr_big',
-            image: 'img/nobile_mr_big.jpg',
+            image: '/img/nobile_mr_big.jpg',
             category: 'kites',
             label: 'Top',
             price: '1549 €',
@@ -165,7 +165,7 @@ export const PRODUCTS =
         {
             id: 4,
             name: 'rookie glowne',
-            image: 'img/rookie glowne.jpg',
+            image: '/img/rookie glowne.jpg',
             category: 'kites',
             label: 'Hot',
             price: '99 €',

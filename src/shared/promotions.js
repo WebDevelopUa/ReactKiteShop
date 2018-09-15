@@ -2,7 +2,7 @@ export const PROMOTIONS = [
     {
         id: 0,
         name: 'Nobile T5',
-        image: 'img/nobile_t5.jpg',
+        image: '/img/nobile_t5.jpg',
         category: 'kites',
         label: 'Hot',
         price: '899 – 1.399 €',
