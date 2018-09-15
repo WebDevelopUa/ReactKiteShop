@@ -8,10 +8,10 @@ import {Switch, Route, Redirect} from 'react-router-dom';
 import Home from "../Home/HomeComponent";
 import Contact from "../Contact/ContactComponent";
 
-import {KITES} from "../../shared/kites";
 import {COMMENTS} from "../../shared/comments";
 import {LEADERS} from "../../shared/leaders";
 import {PROMOTIONS} from "../../shared/promotions";
+import {PRODUCTS} from "../../shared/products";
 
 class Main extends Component {
 
@@ -19,7 +19,7 @@ class Main extends Component {
         super(props);
 
         this.state = {
-            products: KITES,
+            products: PRODUCTS,
             comments: COMMENTS,
             leaders: LEADERS,
             promotions: PROMOTIONS
@@ -47,6 +47,14 @@ class Main extends Component {
             );
         };
 
+        const ProductWithId = ({match}) => {
+            return (
+                <ProductDetail
+                    product={this.state.products.filter((product) => product.id === parseInt(match.params.productId, 10))[0]}
+                />
+            );
+        };
+
         return (
             <Fragment>
                 <span className="App-structure">Main Component</span>
@@ -55,7 +63,8 @@ class Main extends Component {
 
                 <Switch>
                     <Route path="/home" component={HomePage}/>
-                    <Route path="/list" component={List}/>
+                    <Route exact path="/list" component={List}/>
+                    <Route path="/list/:productId" component={ProductWithId}/>
                     <Route path="/contact" component={Contact}/>
                     <Redirect to="/home"/>
                 </Switch>

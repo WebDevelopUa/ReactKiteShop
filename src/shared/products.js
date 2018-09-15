@@ -1,4 +1,4 @@
-export const KITES =
+export const PRODUCTS =
     [
         {
             id: 0,

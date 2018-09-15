@@ -87,7 +87,19 @@ Components: https://reactstrap.github.io/components/navbar/
              
   
   
-  
+      
+#### Configure Products list component Link to Product detail (react-router-dom) (cd app/src/components/)
+
+    ProductList.js:
+    import {Link} from 'react-router-dom';
+    
+    <Card> <Link to={`/list/${product.id}`}> </Link>  </Card>
+    
+    MainComponent.js:
+    <Route path="/list/:productId" component={ProductWithId}/>
+    
+    const ProductWithId = ({match}) => { return (  <ProductDetail   product={this.state.products.filter((product) => product.id === parseInt(match.params.productId, 10))[0]}    />  );  };
+        
   
   
   

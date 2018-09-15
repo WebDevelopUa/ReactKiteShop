@@ -4,31 +4,34 @@ import React from 'react';
 import './ProductsList.css'
 
 import {Card, CardImg, CardText, CardImgOverlay, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
+import {Link} from 'react-router-dom';
 
 //  create Functional component RenderProductsListItem
-function RenderProductsListItem({kite, onClick}) {
+function RenderProductsListItem({product, onClick}) {
     return (
-        <Card key={kite.id} onClick={() => onClick(kite.id)}>
-            <CardImg top width="100%" src={kite.image} alt={kite.name}/>
-            <CardBody>
-                <CardImgOverlay>
-                    <CardTitle>{kite.name}</CardTitle>
-                    <CardSubtitle>{kite.price}</CardSubtitle>
-                    <br/>
-                    <Button>Details</Button>
-                </CardImgOverlay>
-            </CardBody>
+        <Card>
+            <Link to={`/list/${product.id}`}>
+                <CardImg top width="100%" src={product.image} alt={product.name}/>
+                <CardBody>
+                    <CardImgOverlay>
+                        <CardTitle>{product.name}</CardTitle>
+                        <CardSubtitle>{product.price}</CardSubtitle>
+                        <br/>
+                        <Button>Details</Button>
+                    </CardImgOverlay>
+                </CardBody>
+            </Link>
         </Card>
     )
 }
 
 const ProductsList = (props) => {
 
-    const products = props.products.map((kite) => {
+    const products = props.products.map((product) => {
 
         return (
-            <div key={kite.id} className="col-6 col-md-2">
-                <RenderProductsListItem kite={kite} onClick={props.onClick}/>
+            <div key={product.id} className="col-6 col-md-2">
+                <RenderProductsListItem product={product}/>
             </div>
         );
 

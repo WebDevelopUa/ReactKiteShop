@@ -3,14 +3,14 @@ import './ProductDetail.css';
 import {Card, CardImg, CardText, CardImgOverlay, CardBody, CardTitle, CardSubtitle, Button} from 'reactstrap';
 
 // create Functional component for the ProductDetail render
-function RenderProductDetail({product}) {
+function RenderProductDetail({kite}) {
     return (
         <div className="col-12 col-md-4 m-5">
             <Card>
-                <CardImg top width="100%" src={product.image} alt={product.name}/>
+                <CardImg top width="100%" src={kite.image} alt={kite.name}/>
                 <CardBody>
-                    <CardTitle>{product.name}</CardTitle>
-                    <CardText className="Product-description"> {product.description}</CardText>
+                    <CardTitle>{kite.name}</CardTitle>
+                    <CardText className="Product-description"> {kite.description}</CardText>
                 </CardBody>
             </Card>
         </div>
@@ -50,13 +50,13 @@ function RenderComments({comments}) {
 }
 
 const ProductDetail = (props) => {
-    if (props.product != null)
+    if (props.kite != null)
         return (
             <div className="container">
                 <div className="row">
                     <span className="App-structure">Product detail</span>
-                    <RenderProductDetail product={props.product}/>
-                    <RenderComments comments={props.product.comments}/>
+                    <RenderProductDetail kite={props.kite}/>
+                    <RenderComments comments={props.kite.comments}/>
                 </div>
             </div>
 
