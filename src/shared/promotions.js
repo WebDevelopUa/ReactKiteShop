@@ -1,6 +1,25 @@
 export const PROMOTIONS = [
     {
         id: 0,
+        name: 'Infinity split package',
+        image: '/img/all_in_one01.jpg',
+        category: 'kites',
+        label: 'Hot',
+        price: '2299 €',
+        featured: true,
+        description:
+            'Infinity Split Foil 5\'2" with straps, fins, and Complete Alu Foil with cover and Mast 86cm\n' +
+            '\n' +
+            '– Foil dedicated with wave capabilities\n' +
+            '– Comfortable hydrofoiling\n' +
+            '– Great wave performance\n' +
+            '– Super traction\n' +
+            '– Impressive carving\n' +
+            '– Tough flex\n' +
+            '– Splitboard'
+    },
+    {
+        id: 1,
         name: 'Nobile T5',
         image: '/img/nobile_t5.jpg',
         category: 'kites',

@@ -133,6 +133,7 @@ export const COMMENTS =
             date: '2018-01-16T17:57:28.556094Z'
 
         },
+
         {
             id: 14,
             productId: 4,
@@ -141,6 +142,26 @@ export const COMMENTS =
             author: 'Tommy ',
             date: '2018-01-16T17:57:28.556094Z'
 
-        }
+        },
+
+        {
+            id: 15,
+            productId: 5,
+            rating: 5,
+            comment: 'Yes!',
+            author: 'Tommy ',
+            date: '2018-01-16T17:57:28.556094Z'
+
+        },
+
+        {
+            id: 16,
+            productId: 5,
+            rating: 5,
+            comment: 'Wow! Great!',
+            author: 'Tim ',
+            date: '2018-01-16T17:57:28.556094Z'
+
+        },
 
     ];

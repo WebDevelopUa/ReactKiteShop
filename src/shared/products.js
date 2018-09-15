@@ -162,10 +162,11 @@ export const PRODUCTS =
                 '– Catch-free one pump valves position\n' +
                 '– Thin LE&Strut ends',
         },
+
         {
             id: 4,
             name: 'Rookie Glowne',
-            image: '/img/rookie glowne.jpg',
+            image: '/img/rookie_glowne.jpg',
             category: 'kites',
             label: 'Hot',
             price: '99 €',
@@ -185,6 +186,27 @@ export const PRODUCTS =
                 'Material:\n' +
                 '– Nylon\n' +
                 '– 2-line system with wrist leash',
+        },
+
+
+        {
+            id: 5,
+            name: 'Infinity split package',
+            image: '/img/all_in_one01.jpg',
+            category: 'kites',
+            label: 'Hot',
+            price: '2299 €',
+            featured: true,
+            description:
+            'Infinity Split Foil 5\'2" with straps, fins, and Complete Alu Foil with cover and Mast 86cm\n' +
+                '\n' +
+                '– Foil dedicated with wave capabilities\n' +
+                '– Comfortable hydrofoiling\n' +
+                '– Great wave performance\n' +
+                '– Super traction\n' +
+                '– Impressive carving\n' +
+                '– Tough flex\n' +
+                '– Splitboard'
         },
 
 
