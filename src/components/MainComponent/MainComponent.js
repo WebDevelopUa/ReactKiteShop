@@ -7,6 +7,7 @@ import RenderFooter from "../Footer/FooterComponent";
 import {Switch, Route, Redirect} from 'react-router-dom';
 import Home from "../Home/HomeComponent";
 import Contact from "../Contact/ContactComponent";
+import About from "../About/AboutComponet";
 
 import {COMMENTS} from "../../shared/comments";
 import {LEADERS} from "../../shared/leaders";
@@ -66,6 +67,7 @@ class Main extends Component {
                     <Route path="/home" component={HomePage}/>
                     <Route exact path="/list" component={List}/>
                     <Route path="/list/:productId" component={ProductWithId}/>
+                    <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact}/>
                     <Redirect to="/home"/>
                 </Switch>
